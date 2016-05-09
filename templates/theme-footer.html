@@ -6,6 +6,7 @@
 <footer class="global">
   <div class="footer-container">
     <ul class="links">
+     <!--
       %if settings.MKTG_URL_LINK_MAP.get('ABOUT'):
       <li>
         <a id="about" href="${marketing_link('ABOUT')}">${_("About")}</a>
@@ -16,11 +17,13 @@
         <a id="faq" href="${marketing_link('FAQ')}">${_("FAQ")}</a>
       </li>
       %endif
+      -->
       %if settings.MKTG_URL_LINK_MAP.get('CONTACT'):
       <li>
         <a id="contact" href="${marketing_link('CONTACT')}">${_("Contact")}</a>
       </li>
       %endif
+      <!--
       %if settings.MKTG_URL_LINK_MAP.get('TOS'):
       <li>
         <a href="${marketing_link('TOS')}">${_("Terms of Service")}</a>
@@ -36,12 +39,15 @@
         <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
       </li>
       %endif
+      -->
     </ul>
     <p class="copyright">${_(u"© 2015 {platform_name}, some rights reserved.").format(platform_name=platform_name())}</p>
+    <!--
     <div class="by-ionisx">
       <a href="https://ionisx.com">
         <img src="${static.url('themes/{theme_name}/images/logo-x-white.png'.format(theme_name=settings.THEME_NAME))}" alt="Theme by IONISx">
       </a>
     </div>
+    -->
   </div>
 </footer>
